@@ -1,0 +1,5 @@
+import math
+RAD = float(input("Enter radius of cone:"))
+HGT = float(input("Enter height of cone:"))
+VOL = (1/3) * math.pi * (RAD ** 2) * HGT
+print(f"The volume of cone is: {VOL}")
