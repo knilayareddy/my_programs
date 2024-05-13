@@ -1,0 +1,21 @@
+Eid = input("Enter your email id:")
+VOW = 0
+CON = 0
+DIG = 0
+SPC = 0
+for char in Eid:
+    if char.isalpha():
+       if char.lower() in 'aeiou':
+          VOW += 1
+       else:
+          CON += 1
+    else if char.isdigit():
+       DIG += 1
+    else if char.isspace():
+       SPC += 1
+print("Number of Vowels:",VOW)
+print("Number of Consonants:",CON)
+print("Number of Digits:",DIG)
+print("Number of Spaces:",SPC)
+       
+       
