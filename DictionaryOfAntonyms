@@ -1,0 +1,19 @@
+Dict_antonyms = {}
+while True:
+		Any_word = input("Enter any word(or 'Q' to quit):")
+		if Any_word == 'Q':
+				break
+		Antonym_word = input("Enter the antonym of {}:".format(Any_word))
+		Dict_antonyms[Any_word] = Antonym_word
+print("**********************")
+print("DICTIONARY OF ANTONYMS")
+print("**********************")
+while True:
+		Dict_word = input("Enter any dictionary word to find its antonym(or 'Q' to quit):")
+		if Dict_word == 'Q':
+				break
+		if Dict_word in Dict_antonyms:
+				Dict_antonym = Dict_antonyms[Dict_word]
+				print("The antonym of {} is: {}".format(Dict_word,Dict_antonym))
+		else:
+				print("Antonym not found for {}".format(Dict_word))
