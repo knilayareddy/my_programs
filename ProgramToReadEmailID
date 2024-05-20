@@ -9,9 +9,9 @@ for char in Eid:
           VOW += 1
        else:
           CON += 1
-    else if char.isdigit():
+    elif char.isdigit():
        DIG += 1
-    else if char.isspace():
+    elif char.isspace():
        SPC += 1
 print("Number of Vowels:",VOW)
 print("Number of Consonants:",CON)
